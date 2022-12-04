@@ -1,0 +1,18 @@
+RewriteEngine on 
+RewriteRule ^index index.php [NC,L]
+RewriteRule ^upload upload.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+RewriteRule ^register register.php [NC,L]
+RewriteRule ^logout logout.php [NC,L]
+
+RewriteRule ^search search_result.php [NC,L]
+
+
+RewriteRule ^type/([a-zA-Z0-9\-=&_@\.\,\)\(]*)/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ type.php?id=$1&name=$2 [NC,L]
+RewriteRule ^category/([a-zA-Z0-9\-=&_@\.\,\)\(]*)/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ category.php?id=$1&name=$2 [NC,L]
+RewriteRule ^quality/([a-zA-Z0-9\-=&_@\.\,\)\(]*)/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ quality.php?id=$1&name=$2 [NC,L]
+RewriteRule ^torrent/([a-zA-Z0-9\-=&_@\.\,\)\(]*)/([a-zA-Z0-9\-=&_@\.\,\)\(]*)$ post.php?thd=$1&name=$2 [NC,L]
+
+ErrorDocument 404 /error-404
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /error.php [L]
