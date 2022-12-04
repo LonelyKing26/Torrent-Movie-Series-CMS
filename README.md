@@ -5,3 +5,8 @@ Download Torrents Portal
  ● Responsive <br>
  ● Movie Details Fetch from IMDb <br>
  ● Search Movies using IMDb ID <br>
+ ● Auto Rename Torrent File <br>
+ ● Ajax Support
+
+#Programs
+ ● Php, Html, Css, Bootstrap, Jquery, Ajax
