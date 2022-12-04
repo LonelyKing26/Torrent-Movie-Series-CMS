@@ -1,0 +1,257 @@
+html, body, table{
+  overflow-x:hidden;
+}
+@media (max-width:540px){
+  .mob_date{
+    display: none;
+  }
+  .table{
+  font-size:11px;
+}
+}
+
+a{
+  text-decoration: none;
+}
+@media (min-width:541px){
+  a.movie_link{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 540px;
+    cursor: pointer;
+}
+.table{
+  font-size:15px;
+  margin-bottom: 1px;
+}
+a.movie_link:after{
+  content:'...'
+
+}
+}
+a:hover{
+text-decoration: underline;
+}
+.badge{
+background-color:#402b2b;
+color:#fff;
+}
+.thd_cell_home{
+
+}
+.thd_cell_torrent_box{
+padding: 4px;
+}
+.thd_torrent_details .table tr td{
+background-color: #e9decf7d;
+border-radius: 8px;
+color: #342e2e;
+text-align: center;
+}
+.thd_cell_torrrent_list{
+background: #e9e9e9;
+border-radius: 11px;
+}
+
+.thd_torrent:hover{
+background-color: #cfcfcf;;
+}
+.thd_box_heading{
+width: 100%;
+display: none;
+}
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 541px) {
+.thd_box_heading{
+display:none;
+}
+.thd_recent_pics, .thd_recent_pics_row{
+display: none;
+}
+.thd_category{
+display: none;
+}
+.thd_torrent_title a{
+  display: inline-block;
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; 
+  width: 311px; */
+  cursor: pointer;
+  font-size: 12px;
+}
+.accordion-body{
+padding: 5px;
+}
+.thd_torrent{
+  background: #f7f0e6;
+  padding: 15px 0px 0px 0px;
+  margin: 0px -10px 0px 0px;
+  border-radius: 10px;
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+
+  }
+
+}
+
+
+.thd_category{
+text-align: center;
+}
+.thd_cell_sec_head{
+padding: 10px;
+}
+
+/* Desktop */
+@media  (min-width: 540px){
+.thd_torrent_title a{
+  display: inline-block;
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 450px; */
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1;
+}
+.thd_torrent{
+  background: #f7f0e6;
+  /* padding: 15px 0px 0px 0px; */
+  margin: 0px -10px 0px 0px;
+  border-radius: 10px;
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+  height: auto;
+  }
+  .thd_torrent_left{
+    margin-top: 8px;
+  }
+.thd_home_torrent_body{
+width: 99%;
+margin:0 auto;
+}
+.thd_category, .thd_torrent_details{
+  align-self: center;
+
+}
+}
+
+.thd_torrent_title a:after{
+/* content:'...' */
+
+}
+.thd_torrent_title a:before{
+  content: '\f008 \a0';
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: green;
+  }
+
+@-webkit-keyframes scroll {
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-50%);
+}
+}
+
+@keyframes scroll {
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-50%);
+}
+}
+.thd_slider {
+background: white;
+/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+height: 150px;
+margin: auto;
+overflow: hidden;
+position: relative;
+/* width: 960px; */
+}
+/* .thd_slider::before, .thd_slider::after {
+background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 200px;
+position: absolute;
+width: 200px;
+z-index: 2;
+} */
+.thd_slider::after {
+right: 0;
+top: 0;
+transform: rotateZ(180deg);
+}
+.thd_slider::before {
+left: 0;
+top: 0;
+}
+.thd_slider .slide-track {
+-webkit-animation: scroll 40s linear infinite;
+        animation: scroll 40s linear infinite;
+display: flex;
+width: calc(250px * 14);
+}
+.thd_slider .thd_slide_cell {
+height: 100px;
+width: 110px;
+}
+.thd_inner_text p{
+font-size: 9px;
+margin-bottom: 1px !important;
+}
+.accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-button:not(.collapsed){
+background: #6c583e;
+  font-weight: 700;
+  color: #fff;
+  /* font-family: cursive; */
+}
+.card-header:first-child{
+background: #6c583e;
+color: #fff;
+}
+.thd_movie_poster img{
+height: 180px;
+  width: 130px;
+  object-fit: cover;
+  margin-left: -5px;
+}
+.info_poster{
+  position: absolute;
+  margin-top: -175px;
+  z-index: 1;
+  background: antiquewhite;
+  padding: 2px 5px 2px 5px;
+  border-radius: 0px 10px 0px 10px;
+  font-size: 13px;
+}
+a>.thd_hover_img{
+display: none;
+}
+a:hover>.thd_hover_img{
+display: block;
+}
+.thd_hover_img{
+background: white;
+padding: 10px;
+/* width: 150px; */
+position: absolute;
+z-index: 10;
+border-radius: 10px;
+}
+.navbar {
+background-color: #302619 !important;
+}
