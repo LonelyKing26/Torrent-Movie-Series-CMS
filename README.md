@@ -8,5 +8,5 @@ Download Torrents Portal
  ● Auto Rename Torrent File <br>
  ● Ajax Support
 
-#Programs
+<h2> Programs </h2>
  ● Php, Html, Css, Bootstrap, Jquery, Ajax
